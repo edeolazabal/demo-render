@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/v1")
 public class DemoController {
-    @GetMapping("saludo/{nombre}")
+    @GetMapping("/saludo/{nombre}")
     public String saludo (@PathVariable String nombre)  {
         if (nombre == null)  return "Hola amigo";
         return ("Hola "+ nombre);
